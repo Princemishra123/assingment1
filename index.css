@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+  font-family:  'Lato', sans-serif;
+}
+.App-header {
+    background-color:rgb(63,14,64);
+    height: 60px;
+    width:81vw;
+    display: flex;
+   left: 300px;
+    position: sticky;
+  }
+.App-header input { display: flex;
+      margin: 10px;
+      position: relative;
+      width: 300px;
+      height: 15px;
+border: rgb(63,14,64);
+border-radius: 5px;
+left: 450px;
+top: 13px;
+}
+  .head-text{
+    display: flex;
+    font-weight: 900px;
+    color: rgb(248, 248, 248);
+    right: 300px;
+    top:11px; 
+ }
+    .sidebar{
+       background-color:rgb(63,14,64) ;
+        height: 50px;
+        width: 230px;
+        padding: 5px;
+        display:flex;
+        position: relative; 
+    }
+    .corner{display: flex;
+      position: relative;
+      top:-122px;
+      background-color: rgb(248, 248, 248);
+      left: 15px;
+      height: 60px;
+      width: 220px;
+    }
+    .corner img{
+      position: relative;
+      height: 43px;
+      top: 15px;
+    }
+    .sidebar img {position: relative;
+      height: 20px;
+      top: 20px;
+      left: 20px;
+    }
+    .sidebar span{
+      position: relative;
+      top: 22px;
+      left: 35px;
+      color: rgb(248, 248, 248);
+    }
+    .head-text h3{display: flex;
+      position:relative;
+      top: 2px;
+      font-weight: 500;
+      right:200px;
+    }
+    .logo img{
+      position: relative;
+      display: flex;
+      height: 26px;
+      left: 500px;
+      top: 15px;
+    }
+     .box, .box1, .box2, .box3, .box4, .box5, .box6{ 
+      color: rgb(156,156,156);
+      margin: 2px;
+       padding: 10px; 
+      display:flex;
+      position: relative;
+      top: -643px;
+      left:42px;
+    }
+    .box img, .box6 img{
+      position: relative;
+      display: flex;
+      right: 100px;
+    }
+    .box2 img{
+      position: relative;
+      display: flex;
+      right: 154px;
+    }
+    .box3 img{
+      position: relative;
+      display: flex;
+      right: 119px;
+    }
+    .box4 img{
+      position: relative;
+      display: flex;
+      right: 83px;
+    }
+    .box5 img{
+      position: relative;
+      display:inline-block;
+     
+      right: 95px;
+    }
+    .box:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover{color: rgb(63,14,64);
+      background-color:rgb(248,248,248);
+    } 
+    .search2 input{
+      width: 500px;
+     height: 30px;
+     display: flex;
+     position: relative;
+     left: 300px;
+     bottom: 1519px;
+     border:2px silver;
+    
+    }
+    .content{display: flex;
+      position: relative;
+     bottom: 974px;
+      height: 650px;
+      width: 1007px;
+      left: 240px;
+      background-color:rgb(248,248,248);}
+    .boxcontainer{margin: 10px;
+      height: 500px;
+      width: 335px;
+      background-color:rgb(248, 248, 248);
+      display: flex;
+      position: relative;
+      top: -138px;
+      right: 105px;
+    }
+    .innerbox h2{
+      display: inline-block;
+      position: relative;
+      top: -180px;
+      left: 50px;
+    }
+    h2{
+      display: inline-block;
+      bottom: 184px;
+      position: relative;
+      left: 60px;
+      color: rgb(63,14,64);
+    }
+    .search2 img{
+      display: flex;
+      position: relative;
+      left: 261px;
+      bottom: 1542px;
+      border:2px silver;
+      height:14px;
+    }
+    .key{
+      text-decoration: none;
+      color: rgb(63,14,64);
+      font-weight: bold;
+      top: -1606px;
+      display: flex;
+      position: relative;
+      left: 880px;
+    }
+    .btn{
+      background-color: rgb(63,14,64);
+      color: white;
+      height: 39px;
+      width: 150px;
+      border-radius: 5px;
+      border: 0px;
+      bottom: 1585px;
+      left: 965px;
+      position: relative;
+      display: inline;
+    }
+    .btn:hover{
+      color:thistle;
+      height:42px;
+    }
+    .line a{
+      color: rgb(63,14,64);
+      font-weight: 800;
+      height: 40px;
+      display: inline;
+      position: relative;
+      bottom: 1674px;
+      left: 250px;
+      text-decoration: none;
+    }
+    .sbtn{
+      display: inline;
+      position: relative;
+      background-color: rgb(63,14,64);
+      color:white;
+      bottom:1691px ;
+      left:421px ;
+      width: 25px;
+      height: 10px;
+      border: 0px;
+    }
+    .upd a{
+      color: rgb(63,14,64);
+      text-decoration: none;
+      display: flex;
+      position: relative;
+      left: 465px;
+     font-weight: 600;
+      bottom: 1713px;
+    }
+    .para p{
+      color: rgb(76,76,76);
+      font-weight: 600;
+      display: inline;
+      right: -351px;
+      bottom: 1598px;
+      position: relative;
+      font-size:20px;
+    }
+    .box5{
+      color: rgb(63,14,64);
+    }
+    .para2{
+      color: rgb(13, 11, 14);
+      font-weight: 590;
+      display: inline-block;
+      right: -950px;
+      bottom: 1630px;
+      position: relative;
+      font-size: 15px;
+    }
+    .row1 ,.row2, .row3, .row4,.row5{
+      margin: 200px;
+      padding: 60px;
+      bottom: 1676px;
+      left: 325px;
+      position: relative;
+    }
+    .data1, .data2, .data3, .data4, .data5{
+      margin: 200px;
+      padding: 60px;
+      bottom: 1781px;
+      left: 343px;
+      position: relative;
+    }
+    .data2{
+      padding:10px;
+      left: 366px;
+    } 
+    .row4{
+      padding: 10px;
+      left: 325px;
+    }
+    .row5{
+      padding: 10px;
+      left: 325px;
+    }
+    .data5 img{
+      height: 20px;
+    }
+    .data4{
+      left: 330px;
+    }
+    .border1{
+      display: flex;
+      position: relative;
+      height: 41px;
+      width: 876px;
+      border:1px solid gray;
+      bottom: 1922px;
+      left: 361px;
+   box-shadow: 0.3px 0.2px 0.3px 0.3px;
+      opacity: 0.5;
+  }
+  .border2,.border3, .border4, .border5, .border6,.border7{display: flex;
+    position: relative;
+    height: 41px;
+    width: 876px;
+    border:1px solid gray;
+    bottom: 1922px;
+    left: 361px;
+ box-shadow: 0.3px 0.2px 0.3px 0.3px;
+    opacity: 0.5;
+  }
+    .downbutton button{border: 1px;
+      height: 40px;
+      width: 150px;
+border-radius: 8px;
+background-color: rgb(63,14,64);
+color: white;
+left: 715px;
+bottom: 1883px;
+position: relative;
+    }
+    .data1 img{height: 15px;
+      left: 142px;
+     display: inline-block;
+     position: absolute;
+    }
