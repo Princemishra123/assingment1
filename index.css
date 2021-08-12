@@ -237,19 +237,19 @@ top: 13px;
       margin: 200px;
       padding: 60px;
       bottom: 1676px;
-      left: 325px;
+      left: 310px;
       position: relative;
     }
     .data1, .data2, .data3, .data4, .data5{
       margin: 200px;
-      padding: 60px;
-      bottom: 1781px;
-      left: 343px;
+      padding: 15px;
+    bottom: 1741px;
+    left: 362px;
       position: relative;
     }
     .data2{
       padding:10px;
-      left: 366px;
+      left: 351px;
     } 
     .row4{
       padding: 10px;
@@ -267,24 +267,24 @@ top: 13px;
     }
     .border1{
       display: flex;
-      position: relative;
-      height: 41px;
-      width: 876px;
-      border:1px solid gray;
-      bottom: 1922px;
-      left: 361px;
-   box-shadow: 0.3px 0.2px 0.3px 0.3px;
-      opacity: 0.5;
+    position: relative;
+    height: 57px;
+    width: 820px;
+    border: 1px solid gray;
+    bottom: 2104px;
+    left: 314px;
+    box-shadow: 0.3px 0.2px 0.3px 0.3px;
+    opacity: 0.2;
   }
   .border2,.border3, .border4, .border5, .border6,.border7{display: flex;
     position: relative;
-    height: 41px;
-    width: 876px;
-    border:1px solid gray;
-    bottom: 1922px;
-    left: 361px;
- box-shadow: 0.3px 0.2px 0.3px 0.3px;
-    opacity: 0.5;
+    height: 60px;
+    width: 820px;
+    border: 1px solid gray;
+    bottom: 2103px;
+    left: 314px;
+    box-shadow: 0.3px 0.2px 0.3px 0.3px;
+    opacity: 0.2;
   }
     .downbutton button{border: 1px;
       height: 40px;
@@ -292,8 +292,8 @@ top: 13px;
 border-radius: 8px;
 background-color: rgb(63,14,64);
 color: white;
-left: 715px;
-bottom: 1883px;
+left: 661px;
+    bottom: 2057px;
 position: relative;
     }
     .data1 img{height: 15px;
@@ -301,3 +301,4 @@ position: relative;
      display: inline-block;
      position: absolute;
     }
+    

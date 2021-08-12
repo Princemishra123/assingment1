@@ -1,61 +1,37 @@
-let request = new XMLHttpRequest();
+const dashboardAPI = "https://raw.githubusercontent.com/akshita151199/Termmonitor-APIs/main/dashboard";
 let dashboardData;
 var tag = "";
-var table = document.getElementById("mytab1");
-var goal = document.getElementById("goal");
-let className = "data2";
-
-function getData(){
-    // request.open("GET", "https://raw.githubusercontent.com/akshita151199/Termmonitor-APIs/main/dashboard");
-    // request.send();
-    // request.onload = () => {
-    //     // console.log(request);
-    //     if(request.status === 200){
-    //         console.log(JSON.parse(request.response));
-    //         return JSON.parse(request.responseXML);
-    //     }
-    //     else{
-    //         console.log(`error ${request.status} ${request.statusText}`);
-    //     }
-        
-    // }
+let table = document.querySelector('table');
 
 
-    fetch("https://raw.githubusercontent.com/akshita151199/Termmonitor-APIs/main/dashboard")
-    .then(res => {
-        console.log(res.clone().json());
-        return res.clone().json();
-    });
-}
-let myRows = table.rows; 
-// for(let i in table.rows){
-//     let row = table.rows[i]
-//     console.log('row', row)
-//     for (let j in row.cells) {
-//         let col = row.cells[j]
-//         console.log('col', col)
-//         table.rows[i].cells[j].innerHTML = "Hi"    
-//     } 
+getDashboardData().catch(error => console.log(error));
 
-// }
-dashboardData = getData();
-console.log('Test', dashboardData);
-for(let i = 1; i<=6; i++ ){
-    for(let j=0; j<4; j++){
-        // if(j == 0)
-            // console.log('Test', dashboardData.data[0].goal);
+async function getDashboardData() {
+    const response = await fetch(dashboardAPI);
+    const data = await response.json();
+    if (data) {
+        console.log(data);
+        let myRows = table.rows;
+        for (let i = 0; i < 6; i++) {           
+            let Keyword = data.data[i].keyword;
+            let goal = data.data[i].goal;
+            let matches = data.data[i].matches;
+            let searchStatus = data.data[i].search_status;
+            // let deleteKeyword
+            // console.log(Keyword);
 
-            // myRows[i].cells[j].innerHTML = dashboardData.data[0].goal;
+            let template = `
+                <tr>
+                    <div class="border"></div>
+                    <td class="data1"> ${Keyword} <img src="searchicon.png" alt=""></td>
+                    <td class="data2"> ${goal} </td>
+                    <td class="data3"> ${matches} </td>
+                    <td class="data4"> ${searchStatus} </td>
+                    <td class="data5"><button><img src="deleteicon.png" alt=""></button></td>
+                </tr>`;
 
+            table.innerHTML += template;
+        }
     }
 }
-
-
-// fetch("https://raw.githubusercontent.com/akshita151199/Termmonitor-APIs/main/dashboard")
-// .then((responce)=>{
-//     dashboardData = responce.json();
-//     console.log('dashboard',dashboardData[data]);
-// })
-
-// const dashboardUrl = "https://api.openweathermap.org/data/2.5/weather";
 
